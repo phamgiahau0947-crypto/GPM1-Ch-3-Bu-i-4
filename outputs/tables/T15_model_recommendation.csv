@@ -1,0 +1,5 @@
+﻿model,n_pass_var99,crisis_UR_VaR99,runtime_s,complexity,explainability,crisis_gap,score,overall_rank,label,tier,verdict
+HS,0,5.56506,6.10282,1,1,4.56506,2.225,1,Mô phỏng lịch sử (HS),Theo đề,Chưa được hai kiểm định VaR ủng hộ
+GARCH_N,0,5.46369,21.9834,3,3,4.46369,2.35,2,"GARCH(1,1) (GARCH_N)",Theo đề,Chưa được hai kiểm định VaR ủng hộ
+MC_Normal,0,9.01857,14.5862,2,2,8.01857,2.7,3,Monte Carlo (MC_Normal),Theo đề,Chưa được hai kiểm định VaR ủng hộ
+Normal,0,9.04691,7.9507,1,1,8.04691,2.725,4,Phương pháp tham số (Normal),Theo đề,Chưa được hai kiểm định VaR ủng hộ

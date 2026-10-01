@@ -1,0 +1,16 @@
+## Backtest VaR 99%
+
+| portfolio   | model     |    T |   x |   expected | rate   | p_uc   | p_ind   | p_cc   | conclusion                                                                            |
+|:------------|:----------|-----:|----:|-----------:|:-------|:-------|:--------|:-------|:--------------------------------------------------------------------------------------|
+| SP100       | GARCH_N   | 4357 | 123 |     43,570 | 2,82%  | <0,001 | 0,776   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| SP100       | HS        | 4357 |  84 |     43,570 | 1,93%  | <0,001 | 0,006   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| SP100       | MC_Normal | 4357 | 133 |     43,570 | 3,05%  | <0,001 | 0,003   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| SP100       | Normal    | 4357 | 133 |     43,570 | 3,05%  | <0,001 | 0,003   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN100       | GARCH_N   | 4357 |  99 |     43,570 | 2,27%  | <0,001 | 0,626   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN100       | HS        | 4357 |  54 |     43,570 | 1,24%  | 0,126  | <0,001  | <0,001 | Không đạt: Christoffersen bác bỏ bao phủ có điều kiện                                 |
+| VN100       | MC_Normal | 4357 |  90 |     43,570 | 2,07%  | <0,001 | <0,001  | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN100       | Normal    | 4357 |  90 |     43,570 | 2,07%  | <0,001 | <0,001  | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN50_SP50   | GARCH_N   | 4357 | 106 |     43,570 | 2,43%  | <0,001 | 0,019   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN50_SP50   | HS        | 4357 |  62 |     43,570 | 1,42%  | 0,008  | <0,001  | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN50_SP50   | MC_Normal | 4357 |  95 |     43,570 | 2,18%  | <0,001 | 0,001   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |
+| VN50_SP50   | Normal    | 4357 |  96 |     43,570 | 2,20%  | <0,001 | 0,001   | <0,001 | Không đạt: Kupiec bác bỏ tần suất vi phạm; Christoffersen bác bỏ bao phủ có điều kiện |

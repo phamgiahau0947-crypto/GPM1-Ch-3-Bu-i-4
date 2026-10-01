@@ -1,0 +1,4 @@
+﻿series,Date,value,rule,action
+USDVND,2009-12-01,19150,Hampel lần 1: lệch >1.5% so với trung vị 15 phiên,thay bằng giá hợp lệ trước đó
+USDVND,2009-12-08,18750,Hampel lần 1: lệch >1.5% so với trung vị 15 phiên,thay bằng giá hợp lệ trước đó
+USDVND,2009-12-09,18700,Hampel lần 1: lệch >1.5% so với trung vị 15 phiên,thay bằng giá hợp lệ trước đó

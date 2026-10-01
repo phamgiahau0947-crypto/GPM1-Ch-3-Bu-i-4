@@ -1,0 +1,41 @@
+﻿series,label,test,statistic,p_value,sig,conclusion
+VN,VN-Index,Jarque–Bera,1607.58,0,***,Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi
+VN,VN-Index,Anderson–Darling,59.0828,0,***,Bác bỏ chuẩn
+VN,VN-Index,ADF,-16.7152,1.42353e-29,***,Bác bỏ nghiệm đơn vị → dừng
+VN,VN-Index,KPSS,0.0563305,0.1,,Không bác bỏ tính dừng
+VN,VN-Index,ARCH-LM(5),639.314,6.45953e-136,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+VN,VN-Index,ARCH-LM(10),766.062,4.06412e-158,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+VN,VN-Index,Ljung–Box Q(10) r,192.593,5.64213e-36,***,Có tự tương quan trong lợi suất
+VN,VN-Index,Ljung–Box Q(10) r²,2084.57,0,***,Có tự tương quan trong r² (cụm biến động)
+SP_USD,S&P 500 (USD),Jarque–Bera,29219.2,0,***,Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi
+SP_USD,S&P 500 (USD),Anderson–Darling,inf,0,***,Bác bỏ chuẩn
+SP_USD,S&P 500 (USD),ADF,-14.703,2.92649e-27,***,Bác bỏ nghiệm đơn vị → dừng
+SP_USD,S&P 500 (USD),KPSS,0.170522,0.1,,Không bác bỏ tính dừng
+SP_USD,S&P 500 (USD),ARCH-LM(5),1337.68,4.38884e-287,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+SP_USD,S&P 500 (USD),ARCH-LM(10),1417.77,1.444e-298,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+SP_USD,S&P 500 (USD),Ljung–Box Q(10) r,118.935,8.32117e-21,***,Có tự tương quan trong lợi suất
+SP_USD,S&P 500 (USD),Ljung–Box Q(10) r²,4802.3,0,***,Có tự tương quan trong r² (cụm biến động)
+SP_VND,S&P 500 (VND),Jarque–Bera,27537.2,0,***,Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi
+SP_VND,S&P 500 (VND),Anderson–Darling,inf,0,***,Bác bỏ chuẩn
+SP_VND,S&P 500 (VND),ADF,-14.9124,1.45177e-27,***,Bác bỏ nghiệm đơn vị → dừng
+SP_VND,S&P 500 (VND),KPSS,0.120283,0.1,,Không bác bỏ tính dừng
+SP_VND,S&P 500 (VND),ARCH-LM(5),1298.23,1.54559e-278,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+SP_VND,S&P 500 (VND),ARCH-LM(10),1383.31,3.97344e-291,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+SP_VND,S&P 500 (VND),Ljung–Box Q(10) r,129.303,6.48073e-23,***,Có tự tương quan trong lợi suất
+SP_VND,S&P 500 (VND),Ljung–Box Q(10) r²,4665.2,0,***,Có tự tương quan trong r² (cụm biến động)
+USDVND,USD/VND,Jarque–Bera,9.388e+06,0,***,Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi
+USDVND,USD/VND,Anderson–Darling,inf,0,***,Bác bỏ chuẩn
+USDVND,USD/VND,ADF,-25.9061,0,***,Bác bỏ nghiệm đơn vị → dừng
+USDVND,USD/VND,KPSS,0.224656,0.1,,Không bác bỏ tính dừng
+USDVND,USD/VND,ARCH-LM(5),4.12773,0.531176,,Không thấy hiệu ứng ARCH
+USDVND,USD/VND,ARCH-LM(10),4.22498,0.936628,,Không thấy hiệu ứng ARCH
+USDVND,USD/VND,Ljung–Box Q(10) r,32.8684,0.000286604,***,Có tự tương quan trong lợi suất
+USDVND,USD/VND,Ljung–Box Q(10) r²,4.35407,0.929964,,Không có tự tương quan trong r² (cụm biến động)
+VN50_SP50,DM 50/50,Jarque–Bera,5828.94,0,***,Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi
+VN50_SP50,DM 50/50,Anderson–Darling,55.0969,0,***,Bác bỏ chuẩn
+VN50_SP50,DM 50/50,ADF,-16.656,1.58893e-29,***,Bác bỏ nghiệm đơn vị → dừng
+VN50_SP50,DM 50/50,KPSS,0.0505671,0.1,,Không bác bỏ tính dừng
+VN50_SP50,DM 50/50,ARCH-LM(5),865.531,7.66447e-185,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+VN50_SP50,DM 50/50,ARCH-LM(10),950.304,9.43786e-198,***,Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH
+VN50_SP50,DM 50/50,Ljung–Box Q(10) r,132.328,1.56377e-23,***,Có tự tương quan trong lợi suất
+VN50_SP50,DM 50/50,Ljung–Box Q(10) r²,2881.73,0,***,Có tự tương quan trong r² (cụm biến động)

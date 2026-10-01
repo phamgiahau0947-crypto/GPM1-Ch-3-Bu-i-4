@@ -1,0 +1,2 @@
+﻿series,fred_series,n_common,start,end,max_abs_diff_pct,mean_abs_diff_pct,pct_days_diff_below_0_01pct,corr_log_returns
+S&P 500,SP500,2036,2016-09-30,2025-02-28,0.00235167,0.000563182,100,1

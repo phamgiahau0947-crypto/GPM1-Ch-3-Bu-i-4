@@ -1,0 +1,5 @@
+﻿series,N_raw,N_clean,n_flagged_errors,start,end,n_missing,n_dup_dates,dropped_by_merge,pct_dropped_by_merge
+VN,4610,4610,0,2006-02-07,2025-02-28,0,0,0,0
+SP_USD,4610,4610,0,2006-02-07,2025-02-28,0,0,0,0
+USDVND,4610,4610,3,2006-02-07,2025-02-28,0,0,0,0
+MERGED (inner),4610,4610,,2006-02-07,2025-02-28,,,,

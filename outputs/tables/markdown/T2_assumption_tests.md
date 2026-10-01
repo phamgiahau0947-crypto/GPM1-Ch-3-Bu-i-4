@@ -1,0 +1,44 @@
+## Kiểm định giả định của mô hình VaR
+
+| label         | test               | statistic   | p_value   | sig   | conclusion                                                             |
+|:--------------|:-------------------|:------------|:----------|:------|:-----------------------------------------------------------------------|
+| VN-Index      | Jarque–Bera        | 1607,580    | <0,001    | ***   | Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi |
+| VN-Index      | Anderson–Darling   | 59,083      | <0,001    | ***   | Bác bỏ chuẩn                                                           |
+| VN-Index      | ADF                | -16,715     | <0,001    | ***   | Bác bỏ nghiệm đơn vị → dừng                                            |
+| VN-Index      | KPSS               | 0,056       | 0,100     | nan   | Không bác bỏ tính dừng                                                 |
+| VN-Index      | ARCH-LM(5)         | 639,314     | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| VN-Index      | ARCH-LM(10)        | 766,062     | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| VN-Index      | Ljung–Box Q(10) r  | 192,593     | <0,001    | ***   | Có tự tương quan trong lợi suất                                        |
+| VN-Index      | Ljung–Box Q(10) r² | 2084,570    | <0,001    | ***   | Có tự tương quan trong r² (cụm biến động)                              |
+| S&P 500 (USD) | Jarque–Bera        | 29219,200   | <0,001    | ***   | Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi |
+| S&P 500 (USD) | Anderson–Darling   | inf         | <0,001    | ***   | Bác bỏ chuẩn                                                           |
+| S&P 500 (USD) | ADF                | -14,703     | <0,001    | ***   | Bác bỏ nghiệm đơn vị → dừng                                            |
+| S&P 500 (USD) | KPSS               | 0,171       | 0,100     | nan   | Không bác bỏ tính dừng                                                 |
+| S&P 500 (USD) | ARCH-LM(5)         | 1337,680    | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| S&P 500 (USD) | ARCH-LM(10)        | 1417,770    | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| S&P 500 (USD) | Ljung–Box Q(10) r  | 118,935     | <0,001    | ***   | Có tự tương quan trong lợi suất                                        |
+| S&P 500 (USD) | Ljung–Box Q(10) r² | 4802,300    | <0,001    | ***   | Có tự tương quan trong r² (cụm biến động)                              |
+| S&P 500 (VND) | Jarque–Bera        | 27537,200   | <0,001    | ***   | Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi |
+| S&P 500 (VND) | Anderson–Darling   | inf         | <0,001    | ***   | Bác bỏ chuẩn                                                           |
+| S&P 500 (VND) | ADF                | -14,912     | <0,001    | ***   | Bác bỏ nghiệm đơn vị → dừng                                            |
+| S&P 500 (VND) | KPSS               | 0,120       | 0,100     | nan   | Không bác bỏ tính dừng                                                 |
+| S&P 500 (VND) | ARCH-LM(5)         | 1298,230    | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| S&P 500 (VND) | ARCH-LM(10)        | 1383,310    | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| S&P 500 (VND) | Ljung–Box Q(10) r  | 129,303     | <0,001    | ***   | Có tự tương quan trong lợi suất                                        |
+| S&P 500 (VND) | Ljung–Box Q(10) r² | 4665,200    | <0,001    | ***   | Có tự tương quan trong r² (cụm biến động)                              |
+| USD/VND       | Jarque–Bera        | 9388000,000 | <0,001    | ***   | Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi |
+| USD/VND       | Anderson–Darling   | inf         | <0,001    | ***   | Bác bỏ chuẩn                                                           |
+| USD/VND       | ADF                | -25,906     | <0,001    | ***   | Bác bỏ nghiệm đơn vị → dừng                                            |
+| USD/VND       | KPSS               | 0,225       | 0,100     | nan   | Không bác bỏ tính dừng                                                 |
+| USD/VND       | ARCH-LM(5)         | 4,128       | 0,531     | nan   | Không thấy hiệu ứng ARCH                                               |
+| USD/VND       | ARCH-LM(10)        | 4,225       | 0,937     | nan   | Không thấy hiệu ứng ARCH                                               |
+| USD/VND       | Ljung–Box Q(10) r  | 32,868      | <0,001    | ***   | Có tự tương quan trong lợi suất                                        |
+| USD/VND       | Ljung–Box Q(10) r² | 4,354       | 0,930     | nan   | Không có tự tương quan trong r² (cụm biến động)                        |
+| DM 50/50      | Jarque–Bera        | 5828,940    | <0,001    | ***   | Bác bỏ phân phối chuẩn → Normal/MC_Normal dễ đánh giá thấp rủi ro đuôi |
+| DM 50/50      | Anderson–Darling   | 55,097      | <0,001    | ***   | Bác bỏ chuẩn                                                           |
+| DM 50/50      | ADF                | -16,656     | <0,001    | ***   | Bác bỏ nghiệm đơn vị → dừng                                            |
+| DM 50/50      | KPSS               | 0,051       | 0,100     | nan   | Không bác bỏ tính dừng                                                 |
+| DM 50/50      | ARCH-LM(5)         | 865,531     | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| DM 50/50      | ARCH-LM(10)        | 950,304     | <0,001    | ***   | Có hiệu ứng ARCH (biến động theo cụm) → cần GARCH                      |
+| DM 50/50      | Ljung–Box Q(10) r  | 132,328     | <0,001    | ***   | Có tự tương quan trong lợi suất                                        |
+| DM 50/50      | Ljung–Box Q(10) r² | 2881,730    | <0,001    | ***   | Có tự tương quan trong r² (cụm biến động)                              |

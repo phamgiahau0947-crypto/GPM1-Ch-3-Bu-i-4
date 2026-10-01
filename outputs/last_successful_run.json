@@ -1,0 +1,18 @@
+{
+  "data_source": "cleaned",
+  "models_main": [
+    "HS",
+    "Normal",
+    "MC_Normal",
+    "GARCH_N"
+  ],
+  "backtests": [
+    "Kupiec",
+    "Christoffersen"
+  ],
+  "input_hashes": {
+    "daily": "d424674974512e2d9d23f46a47c3f57a",
+    "cpi": "610225385e060f954a1ef126489cb113"
+  },
+  "completed_at": "2026-10-01T10:07:19"
+}

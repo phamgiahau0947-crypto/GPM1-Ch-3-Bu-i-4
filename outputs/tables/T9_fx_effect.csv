@@ -1,0 +1,61 @@
+﻿period,portfolio,corr_SPUSD_FX,model,ES_VND,ES_USD,dES_FX,dES_FX_pct,conclusion
+Toàn kỳ,100% S&P,-0.00259015,HS tĩnh (toàn giai đoạn),0.0403482,0.0404649,-0.00011673,-0.288472,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Toàn kỳ,100% S&P,-0.00259015,HS (rolling),0.0328363,0.0326803,0.000155978,0.477284,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Toàn kỳ,100% S&P,-0.00259015,Normal (rolling),0.0269126,0.0266269,0.00028569,1.07294,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Toàn kỳ,100% S&P,-0.00259015,MC_Normal (rolling),0.0270043,0.0267173,0.000286997,1.0742,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Toàn kỳ,100% S&P,-0.00259015,GARCH_N (rolling),0.0241831,0.023991,0.00019202,0.800384,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Toàn kỳ,50/50,-0.00259015,HS tĩnh (toàn giai đoạn),0.0305735,0.0308072,-0.000233728,-0.75868,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Toàn kỳ,50/50,-0.00259015,HS (rolling),0.025873,0.0260406,-0.000167573,-0.643506,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Toàn kỳ,50/50,-0.00259015,Normal (rolling),0.0212319,0.0212433,-1.13426e-05,-0.0533939,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Toàn kỳ,50/50,-0.00259015,MC_Normal (rolling),0.0213043,0.0213155,-1.12039e-05,-0.052562,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Toàn kỳ,50/50,-0.00259015,GARCH_N (rolling),0.0195854,0.0196567,-7.1329e-05,-0.362874,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+GFC_2008,100% S&P,-0.0110494,HS tĩnh (toàn giai đoạn),0.0770871,0.0767584,0.000328782,0.428333,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+GFC_2008,100% S&P,-0.0110494,HS (rolling),0.0483489,0.0482814,6.75122e-05,0.139831,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+GFC_2008,100% S&P,-0.0110494,Normal (rolling),0.0418088,0.0418505,-4.16791e-05,-0.0995905,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+GFC_2008,100% S&P,-0.0110494,MC_Normal (rolling),0.0419459,0.0419872,-4.13523e-05,-0.0984877,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+GFC_2008,100% S&P,-0.0110494,GARCH_N (rolling),0.0497996,0.0520136,-0.00221394,-4.25646,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+GFC_2008,50/50,-0.0110494,HS tĩnh (toàn giai đoạn),0.0465793,0.0466808,-0.000101515,-0.217465,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+GFC_2008,50/50,-0.0110494,HS (rolling),0.0352701,0.0352156,5.45454e-05,0.15489,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+GFC_2008,50/50,-0.0110494,Normal (rolling),0.0319873,0.0319809,6.38103e-06,0.0199526,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+GFC_2008,50/50,-0.0110494,MC_Normal (rolling),0.0320879,0.0320813,6.63594e-06,0.0206848,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+GFC_2008,50/50,-0.0110494,GARCH_N (rolling),0.0366165,0.036493,0.000123505,0.338435,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+VN_2011_2012,100% S&P,0.0192475,HS tĩnh (toàn giai đoạn),0.0362856,0.0366712,-0.000385576,-1.05144,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+VN_2011_2012,100% S&P,0.0192475,HS (rolling),0.0364568,0.0365046,-4.77826e-05,-0.130895,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+VN_2011_2012,100% S&P,0.0192475,Normal (rolling),0.0301157,0.0290085,0.00110722,3.81688,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+VN_2011_2012,100% S&P,0.0192475,MC_Normal (rolling),0.0302187,0.0291071,0.00111156,3.81886,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+VN_2011_2012,100% S&P,0.0192475,GARCH_N (rolling),0.0264823,0.0246547,0.00182766,7.41303,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+VN_2011_2012,50/50,0.0192475,HS tĩnh (toàn giai đoạn),0.0255567,0.0257336,-0.000176838,-0.687188,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+VN_2011_2012,50/50,0.0192475,HS (rolling),0.0245957,0.0247158,-0.000120134,-0.486062,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+VN_2011_2012,50/50,0.0192475,Normal (rolling),0.0225855,0.0222304,0.000355152,1.5976,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+VN_2011_2012,50/50,0.0192475,MC_Normal (rolling),0.0226618,0.0223051,0.000356662,1.59901,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+VN_2011_2012,50/50,0.0192475,GARCH_N (rolling),0.0221347,0.0214631,0.000671609,3.12914,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+TradeWar_2018,100% S&P,-0.0197898,HS tĩnh (toàn giai đoạn),0.0344448,0.0342075,0.000237342,0.69383,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+TradeWar_2018,100% S&P,-0.0197898,HS (rolling),0.0276051,0.0275652,3.99245e-05,0.144837,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+TradeWar_2018,100% S&P,-0.0197898,Normal (rolling),0.018079,0.0180253,5.37127e-05,0.297986,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+TradeWar_2018,100% S&P,-0.0197898,MC_Normal (rolling),0.0181413,0.0180873,5.40949e-05,0.299078,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+TradeWar_2018,100% S&P,-0.0197898,GARCH_N (rolling),0.0200864,0.0194822,0.000604266,3.10164,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+TradeWar_2018,50/50,-0.0197898,HS tĩnh (toàn giai đoạn),0.0298889,0.0302071,-0.000318243,-1.05354,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+TradeWar_2018,50/50,-0.0197898,HS (rolling),0.0239409,0.024103,-0.000162167,-0.672807,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+TradeWar_2018,50/50,-0.0197898,Normal (rolling),0.0173368,0.0173473,-1.0501e-05,-0.0605341,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+TradeWar_2018,50/50,-0.0197898,MC_Normal (rolling),0.0173976,0.017408,-1.04348e-05,-0.0599424,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+TradeWar_2018,50/50,-0.0197898,GARCH_N (rolling),0.0205544,0.020747,-0.000192676,-0.928692,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,100% S&P,-0.0769473,HS tĩnh (toàn giai đoạn),0.112951,0.113813,-0.000862161,-0.757526,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,100% S&P,-0.0769473,HS (rolling),0.0567751,0.0570973,-0.000322256,-0.564398,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,100% S&P,-0.0769473,Normal (rolling),0.0363767,0.0365538,-0.00017707,-0.48441,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,100% S&P,-0.0769473,MC_Normal (rolling),0.0364986,0.0366762,-0.000177562,-0.484133,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,100% S&P,-0.0769473,GARCH_N (rolling),0.0842676,0.0821089,0.00215869,2.62905,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+COVID_2020,50/50,-0.0769473,HS tĩnh (toàn giai đoạn),0.0742314,0.0741206,0.000110835,0.149534,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+COVID_2020,50/50,-0.0769473,HS (rolling),0.0416882,0.0421103,-0.000422124,-1.00243,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,50/50,-0.0769473,Normal (rolling),0.0248592,0.0250274,-0.000168198,-0.672056,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,50/50,-0.0769473,MC_Normal (rolling),0.0249412,0.0251099,-0.00016871,-0.671887,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+COVID_2020,50/50,-0.0769473,GARCH_N (rolling),0.0226381,0.0268653,-0.00422729,-15.7351,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,100% S&P,0.0741085,HS tĩnh (toàn giai đoạn),0.0383648,0.0387502,-0.000385398,-0.99457,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,100% S&P,0.0741085,HS (rolling),0.0315848,0.0317826,-0.000197776,-0.622279,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,100% S&P,0.0741085,Normal (rolling),0.0284236,0.0282436,0.00017997,0.637208,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Tightening_2022,100% S&P,0.0741085,MC_Normal (rolling),0.0285187,0.0283379,0.000180848,0.638185,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Tightening_2022,100% S&P,0.0741085,GARCH_N (rolling),0.034146,0.0340714,7.46102e-05,0.218982,Tỷ giá LÀM TĂNG rủi ro đuôi khi quy đổi VND
+Tightening_2022,50/50,0.0741085,HS tĩnh (toàn giai đoạn),0.0322956,0.0326781,-0.000382569,-1.17072,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,50/50,0.0741085,HS (rolling),0.0269489,0.0274076,-0.000458658,-1.67347,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,50/50,0.0741085,Normal (rolling),0.021173,0.0213678,-0.000194746,-0.911401,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,50/50,0.0741085,MC_Normal (rolling),0.0212439,0.0214391,-0.000195258,-0.910755,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)
+Tightening_2022,50/50,0.0741085,GARCH_N (rolling),0.0231686,0.0235063,-0.000337704,-1.43666,Tỷ giá đóng vai trò ĐỆM (ES bằng VND thấp hơn)

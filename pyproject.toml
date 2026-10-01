@@ -1,0 +1,29 @@
+[project]
+name = "market_risk"
+version = "1.0.0"
+description = "Đề án 03 — Đo lường rủi ro thị trường: VaR, ES và kiểm định ngược cho danh mục Việt–Mỹ"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 150
+target-version = "py310"
+cache-dir = "outputs/logs/.ruff_cache"
+# code tuần 4, script của thành viên trong thư mục dữ liệu và notebook sinh tự động (lint ở scripts/build_notebook.py)
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E731", "B905", "B023"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::FutureWarning", "ignore::DeprecationWarning"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/build_notebook.py" = ["E501"]
+"dashboard/texts.py" = ["E501"]
+"dashboard/ui.py" = ["E501"]
+"dashboard/views/*.py" = ["E501"]

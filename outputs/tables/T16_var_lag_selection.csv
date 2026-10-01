@@ -1,0 +1,5 @@
+﻿criterion,selected_lag,estimated_lag,stable
+AIC,9,1,True
+BIC,1,1,True
+HQIC,1,1,True
+FPE,9,1,True

@@ -1,0 +1,2 @@
+# Công cụ phát triển không cần cho dashboard hoặc pipeline chạy.
+ruff==0.16.9

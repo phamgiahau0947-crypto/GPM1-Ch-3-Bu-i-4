@@ -1,0 +1,7 @@
+﻿cause,effect,lag_p,F,p_value,sig,conclusion
+S&P 500,USD/VND,1,8.20883,0.00417498,***,S&P 500 Granger-gây ra USD/VND (có thông tin dự báo)
+S&P 500,VN-Index,1,278.417,6.7028e-62,***,S&P 500 Granger-gây ra VN-Index (có thông tin dự báo)
+USD/VND,S&P 500,1,5.31559,0.0211502,**,USD/VND Granger-gây ra S&P 500 (có thông tin dự báo)
+USD/VND,VN-Index,1,0.0254439,0.873268,,Không có quan hệ Granger ở mức 5%
+VN-Index,S&P 500,1,1.05372,0.304669,,Không có quan hệ Granger ở mức 5%
+VN-Index,USD/VND,1,10.1591,0.00143908,***,VN-Index Granger-gây ra USD/VND (có thông tin dự báo)

@@ -1,0 +1,106 @@
+# ==========================================================================
+# config.yaml — MỌI tham số của đề án 03 nằm ở đây (không hard-code trong src/)
+# ==========================================================================
+seed: 2026
+
+paths:
+  processed: data/processed
+  tables: outputs/tables
+  figures: outputs/figures
+  logs: outputs/logs
+
+# Luồng dữ liệu cố định: mọi phân tích chỉ nạp hai file clean bên dưới.
+data_source: cleaned
+
+cleaned_files:
+  directory: data/clean
+  daily: cleaned_daily_data.csv
+  cpi: cleaned_cpi_inflation.csv
+
+# Đối chiếu với nguồn đề án chỉ định (chỉ kiểm chứng, mô hình không đọc file này):
+# FRED SP500, tải 30/09/2026 từ https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500
+fred_check:
+  sp500: data/fred/SP500.csv
+
+# Lọc điểm lỗi báo giá tỷ giá (giá lệch rồi quay về ngay), xem data_pipeline.clean_fx_spikes
+fx_cleaning:
+  hampel_window: 15           # trung vị trượt 15 phiên, căn giữa
+  hampel_threshold: 0.015     # lệch > 1,5% so với trung vị → điểm lỗi, thay bằng giá liền trước
+
+# Ngưỡng cảnh báo lỗi nhập liệu (biến động ngày tuyệt đối)
+jump_alert:
+  vn: 0.07                    # biên độ HOSE ±7%
+  sp: 0.13
+  fx: 0.03
+
+# --- Danh mục -------------------------------------------------------------
+portfolios:
+  main:                       # 3 danh mục chính (w_VN, w_SP)
+    VN100: [1.00, 0.00]
+    VN50_SP50: [0.50, 0.50]
+    SP100: [0.00, 1.00]
+  grid:                       # lưới Application
+    W100_0: [1.00, 0.00]
+    W75_25: [0.75, 0.25]
+    W50_50: [0.50, 0.50]
+    W25_75: [0.25, 0.75]
+    W0_100: [0.00, 1.00]
+
+# --- Mô hình VaR/ES -------------------------------------------------------
+risk:
+  var_levels: [0.95, 0.975, 0.99]
+  es_level: 0.975
+  window: 252
+  robust_windows: [500, 1000]
+  mc_paths: 10000
+  garch_refit_every: 20
+  robust_refit: [1, 5, 20]
+  robust_refit_sample: ["2018-01-01", "2022-12-31"]
+  n_jobs: -1
+models_main: [HS, Normal, MC_Normal, GARCH_N]
+benchmark_model: HS
+
+# --- Backtest ---------------------------------------------------------------
+backtest:
+  alpha_test: 0.05
+  bootstrap_reps: 5000
+
+# --- Đa dạng hóa ---------------------------------------------------------------
+diversification:
+  corr_windows: [63, 252]
+  ewma_lambda: 0.94
+  primary_model: GARCH_N
+  compare_model: HS
+  tail_quantiles: [0.05, 0.10, 0.20, 0.30, 0.50]
+  block_len: 63
+  bootstrap_reps: 5000
+
+# --- Lạm phát ------------------------------------------------------------------
+inflation:
+  threshold: 0.04             # "Cao" nếu π > 4%
+  publication_lag_months: 1   # phiên bản "đã công bố"
+
+# --- Stress test ---------------------------------------------------------------
+stress_periods:
+  GFC_2008:        {start: "2008-01-01", end: "2009-03-31", enabled: true,  label: "Khủng hoảng tài chính toàn cầu 2008"}
+  VN_2011_2012:    {start: "2011-01-01", end: "2012-12-31", enabled: true,  label: "Lạm phát cao & tái cơ cấu ngân hàng VN 2011–2012"}
+  TradeWar_2018:   {start: "2018-02-01", end: "2018-12-31", enabled: true,  label: "Căng thẳng thương mại Mỹ–Trung 2018"}
+  COVID_2020:      {start: "2020-02-20", end: "2020-04-30", enabled: true,  label: "COVID-19 2020"}
+  Tightening_2022: {start: "2022-01-01", end: "2022-12-31", enabled: true,  label: "Thắt chặt tiền tệ & lạm phát 2022"}
+core_stress: [GFC_2008, TradeWar_2018, COVID_2020, Tightening_2022]
+
+hypothetical:
+  notional_vnd: 1000000000
+  fx_shock: 0.05              # USD/VND tăng 5% (VND mất giá 5%)
+  vn_shock: -0.07
+  sp_shock: -0.10
+  stressed_corr: 0.9
+
+# --- Application ---------------------------------------------------------------
+application:
+  es_limits: [0.03, 0.04, 0.05]
+
+# --- VAR (Bài 9) ---------------------------------------------------------------
+var_model:
+  maxlags: 10
+  irf_horizon: 10

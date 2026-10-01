@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ruff_cache/
+outputs/logs/
+data/processed/rolling_cache/
+.ipynb_checkpoints/
+.pytest_cache/
+data/processed/
+.venv/
+outputs/reproducibility/ket_qua_kiem_tra.json
+outputs/reproducibility/chi_tiet_so_khop.csv
+outputs/reproducibility/bao_cao_tai_lap.md
+outputs/reproducibility/BAO_CAO_TAI_LAP.html

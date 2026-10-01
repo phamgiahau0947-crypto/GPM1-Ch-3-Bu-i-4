@@ -1,0 +1,70 @@
+# Giao diện Đề án 03 — hệ token thiết kế (xem dashboard/ui.py và docs/design_system.md)
+[server]
+headless = true
+port = 8501
+enableStaticServing = true      # phục vụ font nhúng ở dashboard/static/fonts (chạy được cả khi không có Internet)
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
+
+[theme]
+base = "light"
+primaryColor = "#1B3A6B"               # navy — nút chính, trạng thái chọn
+backgroundColor = "#F4F6FA"            # nền ứng dụng
+secondaryBackgroundColor = "#FFFFFF"   # thẻ, ô nhập
+textColor = "#14213D"
+linkColor = "#1B3A6B"
+borderColor = "#E3E8F0"
+dataframeBorderColor = "#E3E8F0"
+dataframeHeaderBackgroundColor = "#EEF2F8"
+showWidgetBorder = true
+baseRadius = "10px"
+buttonRadius = "8px"
+baseFontSize = 15
+font = "Be Vietnam Pro, sans-serif"
+headingFont = "Montserrat, Be Vietnam Pro, sans-serif"
+headingFontWeights = [700, 700, 600, 600, 600, 600]
+headingFontSizes = ["2.1rem", "1.55rem", "1.25rem", "1.1rem", "1rem", "0.95rem"]
+metricValueFontSize = "1.9rem"
+metricValueFontWeight = 700
+codeFont = "monospace"
+# Bảng màu phân loại — đã qua validate_palette.js (độ sáng, sắc độ, mù màu, tương phản): ALL CHECKS PASS
+chartCategoricalColors = ["#2D66AD", "#B07D18", "#1B9A84", "#D0593C", "#7C5CB0", "#D9669C"]
+chartSequentialColors = ["#EEF3FA", "#D5E1F2", "#B4C9E7", "#8EADD8", "#6A91C7", "#4B78B6", "#2D66AD", "#234F88", "#1B3B66", "#122848"]
+chartDivergingColors = ["#A8432B", "#D0593C", "#E6A08F", "#F3D3CA", "#E9ECF1", "#C9D7EC", "#8EADD8", "#4B78B6", "#2D66AD", "#1B3A6B"]
+
+[[theme.fontFaces]]
+family = "Montserrat"
+url = "app/static/fonts/Montserrat-Variable.ttf"
+weight = "100 900"
+
+[[theme.fontFaces]]
+family = "Be Vietnam Pro"
+url = "app/static/fonts/BeVietnamPro-Regular.ttf"
+weight = 400
+
+[[theme.fontFaces]]
+family = "Be Vietnam Pro"
+url = "app/static/fonts/BeVietnamPro-Medium.ttf"
+weight = 500
+
+[[theme.fontFaces]]
+family = "Be Vietnam Pro"
+url = "app/static/fonts/BeVietnamPro-SemiBold.ttf"
+weight = 600
+
+[[theme.fontFaces]]
+family = "Be Vietnam Pro"
+url = "app/static/fonts/BeVietnamPro-Bold.ttf"
+weight = 700
+
+[theme.sidebar]
+backgroundColor = "#0F1E3A"            # navy đậm như khung "Mục tiêu đề án" trong slide đề
+secondaryBackgroundColor = "#1B2B4B"
+textColor = "#E6EBF3"
+primaryColor = "#D9B35A"               # vàng đồng trên nền navy
+borderColor = "#2A3B5E"
+linkColor = "#D9B35A"
